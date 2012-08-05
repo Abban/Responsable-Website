@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot");
+  src: url("../font/fontello.eot?#iefix") format('embedded-opentype'), url("../font/fontello.woff") format('woff'), url("../font/fontello.ttf") format('truetype'), url("../font/fontello.svg#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  opacity: 0.7;
+/* Uncomment for 3D effect */
+/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+/* fix buttons height */
+  line-height: 1em;
+/* you can be more comfortable with increased icons size */
+/* font-zize: 120%; */
+}
+
+.icon-th-list:before { content: '\2630'; } /* '☰' */
+.icon-th:before { content: '\268f'; } /* '⚏' */
+.icon-back-alt:before { content: '\e707'; } /* '' */
+.icon-code:before { content: '\e714'; } /* '' */
+.icon-vcard:before { content: '\e722'; } /* '' */
+.icon-install:before { content: '\e778'; } /* '' */
+.icon-github:before { content: '\f308'; } /* '' */
+.icon-picture:before { content: '🌄'; } /* '\1f304' */

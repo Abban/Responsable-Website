@@ -1,0 +1,81 @@
+<?php include_once('header.php'); ?>
+
+	<div id="content">
+			
+		<section id="page">
+
+			<h2>Setting it up</h2>
+
+			<p>Everything comes more or less preconfigured for usage. There are a couple of things you'll want to do before getting started though, set up a less compiler and add the htaccess for allowing the IE7 polyfill to work on your server.</p>
+
+			<h3>Less</h3>
+
+			<p>The grid is built and runs on <a href="http://lesscss.org">less</a>. Less is a dynamic stylesheet compiler that makes it faster and easier to style your pages. In order to use it you need set it to compile using either the <a href="http://incident57.com/less/">Less App</a> or <a href="http://incident57.com/codekit/">Codekit</a>. I can't recommend Codekit enough, it hugely changed my workflow. You can also set less to compile on the fly but don't do that. Just don't.</p>
+
+			<h3>Polyfill</h3>
+
+			<p>The reason this grid works so simply is down to a CSS rule called box-sizing. This changes the box model so padding doesn't affect the declared width of an element. You can read more about it <a href="http://paulirish.com/2012/box-sizing-border-box-ftw/">here</a>. IE6 and 7 don't support it however, so if you want to support them you need to add in the polyfill. To do so simple uncomment the following from line 33 of grid.less and line 17 of normalize-baseline.less:</p>
+
+			<pre>*behavior: url(/assets/js/libs/boxsizing.htc)</pre>
+
+			<p>Remember to keep the * at the start as thats a CSS hack to only apply the rule to IE6 and 7. Next you might need to add the following to your .htaccess:</p>
+
+			<pre>AddType text/x-component .htc</pre>
+
+			<p>This updates the content type on your server configuration.</p>
+
+			<h2>The Basics</h2>
+
+			<p>Responsable is pretty simple to use. Here is some sample html and css:</p>
+
+			<h3>HTML</h3>
+
+<pre>
+&lt;body&gt;
+   &lt;section&gt;This is your section&lt;/section&gt;
+   &lt;aside&gt;This is your sidebar&lt;/aside&gt;
+&lt;/body&gt;
+</pre>
+			
+			<h3>CSS</h3>
+
+<pre>
+article{
+   .column(8);
+}
+aside{
+   .column(4);
+}
+</pre>
+
+			<p>You can see the columns are set right in the CSS. The actual with is being set as a percentage so the article will be 8/12ths of the container and the aside will be 4/12ths.</p>
+
+			<h2>The Not So Basics</h2>
+
+			<p>Responsable has a few more features you might want to check out.</p>
+
+			<h3>Custom Gutters</h3>
+
+			<p>If you want to change the gutter on a column, you can pass through a custom value as the second parameter when you call the <code>.column()</code> function. For example if you have your gutter set to 20 pixels and you hava a content box that need to be 40 you declare the column like this:</p>
+
+<pre>
+article{
+	.column(8, 40px);
+}
+</pre>
+
+			<p>Because we're using the border box model this won't affect the width of the column.</p>
+
+			<h3>Nesting Columns</h3>
+
+			<p>You can pass values through for nesting columns as the third parameter.</p>
+
+			<h3>Push &amp; Pull</h3>
+
+			<h3>Responsive Images</h3>
+				
+		</section>
+
+	</div>
+
+<?php include_once('footer.php'); ?>

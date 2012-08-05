@@ -1,0 +1,228 @@
+/**
+ * Responsable Grid System
+ *
+ * Setting up a responsive grid based on Semantic GS
+ *
+ * @author Abban Dunne http://abandon.ie
+ * @version 1.0
+ */
+
+/* ========================================================== */
+/* = Site Variables                                         = */
+/* ========================================================== */
+
+/* Grid options */
+@gutter_width: 40px; // Your gutter width
+@columns: 12; // The amount of columns you want
+@max_width: 1048px; // Set a maximum width of the site
+
+/**
+ * Baseline
+ * 
+ * Common settings for this:
+ * 
+ * 100% for 16px font and 24px baseline.
+ * 
+ * 75% for 12px font and 18px baseline.
+ * 
+ */
+@baseline: 100%;
+
+/* Font variables */
+@body_color: #333;
+@heading_color: #111;
+
+@body_family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+@heading_family: "Open Sans Condensed", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+
+/* Link colors */
+@link: #6bac60;
+@link_hover: #78aace;
+
+/* Select colors */
+@select: #78aace;
+@select_color: #fff;
+
+/* Default Colors */
+@grey_light: #ddd;
+@grey_regular: #ccc;
+@grey_dark: #666;
+
+@green: #6bac60;
+@dark: #333;
+
+/* ========================================================== */
+/* = Import normalize baseline and grid                    = */
+/* ========================================================== */
+
+@import "normalize-baseline.less";
+@import "grid.less";
+@import "ui.less";
+@import "icons.less";
+
+/* ========================================================== */
+/* = Your custom styles go here                             = */
+/* ========================================================== */
+
+body{
+	background: url(../images/bg.png) 0 2px;
+}
+
+div#container{
+	.row();
+	background:#fff;
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+	-ms-box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+
+header#worlds_birth{
+	background:url(../images/arches.png);
+	.grid-clearfix();
+	border-bottom: 4px solid @green;
+	padding: 0 @gutter_width*0.5;
+	>div#logo{
+		.column(4);
+		>figure{
+			float:left;
+			width: 60px;
+			height: 4.5em;
+			background:@green;
+		}
+		>a{
+			.column(3, @gutter_width*0.5, 4);
+			font-family:@heading_family;
+			line-height: 2em;
+			font-size: 36px;
+			font-weight:bold;
+			color:@body_color;
+			&:hover, &:focus{
+				color:@link;
+			}
+		}
+		>p{
+			.column(4, 0, 4);
+			font-size:12px;
+		}
+	}
+	>nav{
+		.column(8);
+		font-weight: bold;
+		line-height: 4.5em;
+		ul{
+			float:right;
+			li{
+				display:inline;
+				padding-left: 24px;
+			}
+			li.download{
+				a{
+					background: @link;
+					color:#fff;
+					padding: 0 8px;
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					-ms-border-radius: 3px;
+					border-radius: 3px;
+					&:hover, &:focus{
+						background:@link_hover;
+					}
+				}
+			}
+		}
+	}
+	>div#blurb{
+		.column(12);
+		text-align:center;
+		padding-top: 3em;
+		padding-bottom: 3em;
+		h1{
+			font-size:38px;
+		}
+	}
+	>div#cta{
+		.column(12);
+		.push(3);
+		.pull(3);
+		>div{
+			.column(3, @gutter_width*0.5, 6);
+			line-height: 3em;
+			margin-bottom: -1.6em;
+			>a{
+				display:block;
+			}
+		}
+	}
+}
+
+#content{
+	.grid-clearfix();
+	padding: 3em @gutter_width*0.5;
+	background: #fff;
+	border-bottom: 4px solid @green;
+	>section#features{
+		header{
+			.column(12);
+			margin-bottom: 1.5em;
+		}
+		>div{
+			.column(4);
+			margin-bottom: 1.5em;
+			>span{
+				.column(1, @gutter_width*0.5, 4);
+				font-size: 50px;
+				color:@grey_light;
+
+				-webkit-transition:all .2s linear;
+			    -moz-transition:all .2s linear;
+			    -o-transition:all .2s linear;
+			    transition:all .2s linear;
+			}
+			>div{
+				.column(3, @gutter_width*0.5, 4);
+			}
+			&:hover, &:focus{
+				>span{
+					color:@green;
+				}
+			}
+		}
+	}
+	>section#page{
+		.column(12);
+		.push(2);
+		.pull(2);
+	}
+}
+
+footer#worlds_end{
+	.grid-clearfix();
+	padding: 1.5em @gutter_width*0.5;
+	background:url(../images/arches.png);
+	font-size:small;
+	div#license{
+		.column(8);
+	}
+	div#contact{
+		.column(4);
+		text-align:right;
+	}
+}
+
+
+@media screen and (max-width: 750px){
+	#content{
+		>div{
+		}
+	}
+}
+
+@media screen and (max-width: 520px){
+	#content{
+		>div{
+		}
+	}
+}
+
+
