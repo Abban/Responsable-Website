@@ -37,8 +37,8 @@ switch($current_page){
 
 	case 'grid':
 
-		$page_heading = 'This is the grid page heading';
-		$page_subheading = 'This is the grid page subheading';
+		$page_heading = 'An Incredibly Versatile Grid';
+		$page_subheading = 'Check out an example of a 12 column grid layout.';
 
 		break;
 

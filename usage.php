@@ -12,6 +12,10 @@
 
 			<p>The grid is built and runs on <a href="http://lesscss.org">less</a>. Less is a dynamic stylesheet compiler that makes it faster and easier to style your pages. In order to use it you need set it to compile using either the <a href="http://incident57.com/less/">Less App</a> or <a href="http://incident57.com/codekit/">Codekit</a>. I can't recommend Codekit enough, it hugely changed my workflow. You can also set less to compile on the fly but don't do that. Just don't.</p>
 
+			<h3>SCSS</h3>
+
+			<p>THe same grid is also provided in SCSS. <!-- Brief bit by jimmy on SCSS --></p>
+
 			<h3>Polyfill</h3>
 
 			<p>The reason this grid works so simply is down to a CSS rule called box-sizing. This changes the box model so padding doesn't affect the declared width of an element. You can read more about it <a href="http://paulirish.com/2012/box-sizing-border-box-ftw/">here</a>. IE6 and 7 don't support it however, so if you want to support them you need to add in the polyfill. To do so simple uncomment the following from line 33 of grid.less and line 17 of normalize-baseline.less:</p>
@@ -28,7 +32,7 @@
 
 			<p>Responsable is pretty simple to use. Here is some sample html and css:</p>
 
-			<h3>HTML</h3>
+			<strong>HTML</strong>
 
 <pre>
 &lt;body&gt;
@@ -37,7 +41,7 @@
 &lt;/body&gt;
 </pre>
 			
-			<h3>CSS</h3>
+			<strong>CSS</strong>
 
 <pre>
 article{
@@ -60,7 +64,7 @@ aside{
 
 <pre>
 article{
-	.column(8, 40px);
+    .column(8, 40px);
 }
 </pre>
 
@@ -68,11 +72,70 @@ article{
 
 			<h3>Nesting Columns</h3>
 
-			<p>You can pass values through for nesting columns as the third parameter.</p>
+			<p>You can pass values through for nesting columns as the third parameter. Because the column widths are set as percentages you need to pass the number of columns in the parent element so that the width of the child elements can be properly calculated. Here's sample html and css:</p>
+
+			<strong>HTML</strong>
+<pre>
+&lt;body&gt;
+   &lt;section&gt;This is your section
+       &lt;div&gt;This is a subcolumn&lt;/div&gt;
+       &lt;div&gt;This is a subcolumn&lt;/div&gt;
+   &lt;/section&gt;
+   &lt;aside&gt;This is your sidebar&lt;/aside&gt;
+&lt;/body&gt;
+</pre>
+
+			<strong>CSS</strong>
+
+<pre>
+article{
+   .column(8, 0);
+   div{
+       .column(4, @gutter_width, 8);
+    }
+}
+aside{
+   .column(4);
+}
+</pre>
+
+			<p>One thing you need to note is that you have to pass the gutter width through as the second parameter for the child elements. To keep the same gutter as the rest of the grid I passed through the <code>@gutter_width</code> variable. I also set the gutter to 0 on he parent element but that isn't required.</p>
 
 			<h3>Push &amp; Pull</h3>
 
+			<p>Pushing and pulling simply adds the amount of columns as the left or right padding of the element. You can push and pull like this:</p>
+
+<pre>
+article{
+    .column(8);
+    .push(1);
+    .pull(1);
+}
+aside{
+    .column(4);
+}
+</pre>
+
+			<p>As the padding on the element doesn't affect the width with our box model you still declare it as a <code>.column(8);</code> the push and pull declarations then add the padding to each side of the element.</p>
+
 			<h3>Responsive Images</h3>
+
+			<p>The framework also integrates jQuery Picture to allow you to add responsivity to your images. You can read about jQuery Picture <a href="http://jquerypicture.com">here</a>.</p>
+
+			<h2>Limitations</h2>
+
+			<p>Because the framework uses set gutter width, this means that smaller elements have a minimum width. For example, if you have 12 single columns with a 24px gutter the grid will break on smaller screens as the 12 columns will shrink down until they get to 48px then stop. To fix this you need to change the number of columns you're using in your media queries. Heres a small example that changes them from a single column to 3 columns on smaller screens:</p>
+
+<pre>
+div{
+    .column(1);
+}
+@media screen and (max-width: 750px){
+    div{
+        .column(3);
+    }
+}
+</pre>
 				
 		</section>
 

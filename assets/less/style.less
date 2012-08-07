@@ -36,11 +36,11 @@
 @heading_family: "Open Sans Condensed", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
 
 /* Link colors */
-@link: #6bac60;
-@link_hover: #78aace;
+@link: #4d7c45;
+@link_hover: #6bac60;
 
 /* Select colors */
-@select: #78aace;
+@select: #6bac60;
 @select_color: #fff;
 
 /* Default Colors */
@@ -115,10 +115,16 @@ header#worlds_birth{
 			li{
 				display:inline;
 				padding-left: 24px;
+				a{
+					color:@green;
+					&:hover, &:focus{
+						color:@link;
+					}
+				}
 			}
 			li.download{
 				a{
-					background: @link;
+					background: @green;
 					color:#fff;
 					padding: 0 8px;
 					-webkit-border-radius: 3px;
@@ -126,7 +132,7 @@ header#worlds_birth{
 					-ms-border-radius: 3px;
 					border-radius: 3px;
 					&:hover, &:focus{
-						background:@link_hover;
+						background:@link;
 					}
 				}
 			}
@@ -194,6 +200,103 @@ header#worlds_birth{
 		.push(2);
 		.pull(2);
 	}
+	section#one,
+	section#two,
+	section#three,
+	section#four,
+	section#five,
+	section#six,
+	section#seven,
+	section#eight,
+	section#nine,
+	section#ten,
+	section#eleven,
+	section#thirds,
+	section#quarters,
+	section#sixths,
+	section#twelfths{
+		background:#ccc;
+		div{
+			background: @green;
+			height: 3em;
+			margin-bottom: 1.5em;
+			border: @gutter_width*0.5 solid #ddd;
+			border-top:0;
+			border-bottom:0;
+		}
+	}
+	section#one,
+	section#two,
+	section#three,
+	section#four,
+	section#five,
+	section#six,
+	section#seven,
+	section#eight,
+	section#nine,
+	section#ten,
+	section#eleven{
+		div:last-child{
+			background:#eee;
+		}
+	}
+	section#one{
+		>div:first-child{.column(1);}
+		>div:last-child{.column(11);}
+	}
+	section#two{
+		>div:first-child{.column(2);}
+		>div:last-child{.column(10);}
+	}
+	section#three{
+		>div:first-child{.column(3);}
+		>div:last-child{.column(9);}
+	}
+	section#four{
+		>div:first-child{.column(4);}
+		>div:last-child{.column(8);}
+	}
+	section#five{
+		>div:first-child{.column(5);}
+		>div:last-child{.column(7);}
+	}
+	section#six{
+		>div:first-child{.column(6);}
+		>div:last-child{.column(6);}
+	}
+	section#seven{
+		>div:first-child{.column(7);}
+		>div:last-child{.column(5);}
+	}
+	section#eight{
+		>div:first-child{.column(8);}
+		>div:last-child{.column(4);}
+	}
+	section#nine{
+		>div:first-child{.column(9);}
+		>div:last-child{.column(3);}
+	}
+	section#ten{
+		>div:first-child{.column(10);}
+		>div:last-child{.column(2);}
+	}
+	section#eleven{
+		div{margin-bottom:0;}
+		>div:first-child{.column(11);}
+		>div:last-child{.column(1);}
+	}
+	section#thirds{
+		>div{.column(4);}
+	}
+	section#quarters{
+		>div{.column(3);}
+	}
+	section#sixths{
+		>div{.column(2);}
+	}
+	section#twelfths{
+		>div{.column(1);}
+	}
 }
 
 footer#worlds_end{
@@ -202,10 +305,10 @@ footer#worlds_end{
 	background:url(../images/arches.png);
 	font-size:small;
 	div#license{
-		.column(8);
+		.column(7);
 	}
 	div#contact{
-		.column(4);
+		.column(5);
 		text-align:right;
 	}
 }

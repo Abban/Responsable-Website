@@ -47,7 +47,7 @@
 
 				<a href="<?php echo site_url(); ?>">Responsable.</a>
 
-				<p>A responsive html/css framework by <a href="http://abandon.ie">Abban Dunne</a>.</p>
+				<p>A responsive html/css framework.</p>
 			
 			</div>
 
