@@ -8,9 +8,15 @@
 
 			<p>Everything comes more or less preconfigured for usage. There are a couple of things you'll want to do before getting started though, set up a less compiler and add the htaccess for allowing the IE7 polyfill to work on your server.</p>
 
+			<h3>Codekit</h3>
+
+			<p>We can't recommend <a href="http://incident57.com/codekit/">Codekit</a> enough, it hugely changed our workflow and to be honest Responsable works best with it.</p>
+
+			<p><strong>Note:</strong> When importing your project into Codekit it will set both the style.less and the style.scss to compile to style.css. This could lead to styles being overwritten so you need to uncheck the compile directly checkbox on either the Less or the SCSS sheet depending on which one you're using.</p>
+
 			<h3>Less</h3>
 
-			<p>The grid is built and runs on <a href="http://lesscss.org">less</a>. Less is a dynamic stylesheet compiler that makes it faster and easier to style your pages. In order to use it you need set it to compile using either the <a href="http://incident57.com/less/">Less App</a> or <a href="http://incident57.com/codekit/">Codekit</a>. I can't recommend Codekit enough, it hugely changed my workflow. You can also set less to compile on the fly but don't do that. Just don't.</p>
+			<p>The grid is built and runs on <a href="http://lesscss.org">Less</a>. Less is a dynamic stylesheet compiler that makes it faster and easier to style your pages. In order to use it you need set it to compile using either the <a href="http://incident57.com/less/">Less App</a> or Codekit. You can also set Less to compile on the fly but don't do that. Just don't.</p>
 
 			<h3>SCSS</h3>
 
@@ -99,7 +105,7 @@ aside{
 }
 </pre>
 
-			<p>One thing you need to note is that you have to pass the gutter width through as the second parameter for the child elements. To keep the same gutter as the rest of the grid I passed through the <code>@gutter_width</code> variable. I also set the gutter to 0 on he parent element but that isn't required.</p>
+			<p>One thing you need to note is that you have to pass the gutter width through as the second parameter for the child elements. To keep the same gutter as the rest of the grid in this example we passed through the <code>@gutter_width</code> variable. We also set the gutter to 0 on he parent element which ensures the children adhere to the overall grid but that isn't required.</p>
 
 			<h3>Push &amp; Pull</h3>
 
@@ -119,6 +125,19 @@ aside{
 			<p>As the padding on the element doesn't affect the width with our box model you still declare it as a <code>.column(8);</code> the push and pull declarations then add the padding to each side of the element.</p>
 
 			<h3>Responsive Images</h3>
+
+			<figure class="responsive" data-media="http://placehold.it/300x<?php echo 24*2; ?>" data-media420="http://placehold.it/420x<?php echo 24*4; ?>" data-media670="http://placehold.it/672x<?php echo 24*6; ?>" title="A Half Brained Idea">
+				<noscript>
+					<img src="http://placehold.it/672x<?php echo 24*6; ?>" alt="">
+				</noscript>
+				<figcaption>Check out the responsive images!</figcaption>
+			</figure>
+
+			<script type="text/javascript">
+				$(function(){
+					$('.responsive').picture({ container : '#page'});
+				});
+			</script>
 
 			<p>The framework also integrates jQuery Picture to allow you to add responsivity to your images. You can read about jQuery Picture <a href="http://jquerypicture.com">here</a>.</p>
 
