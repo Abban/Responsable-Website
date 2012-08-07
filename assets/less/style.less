@@ -200,6 +200,16 @@ header#worlds_birth{
 		.push(2);
 		.pull(2);
 	}
+
+	>section#typography{
+		.column(8);
+		background:url(../images/baseline.png);
+	}
+	>aside#typography_sidebar{
+		.column(4);
+		background:url(../images/baseline.png);
+	}
+
 	section#one,
 	section#two,
 	section#three,
@@ -316,14 +326,20 @@ footer#worlds_end{
 
 @media screen and (max-width: 750px){
 	#content{
-		>div{
+		>section#page{
+			.column(12);
+			.push();
+			.pull();
 		}
 	}
 }
 
 @media screen and (max-width: 520px){
 	#content{
-		>div{
+		>section#page{
+			.column(12);
+			.push(0);
+			.pull(0);
 		}
 	}
 }

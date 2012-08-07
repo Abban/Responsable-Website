@@ -305,6 +305,7 @@ pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
+  overflow-x: auto;
 }
 /*
  * Addresses CSS quotes not supported in IE6/7.
@@ -925,8 +926,9 @@ header#worlds_birth > div#logo {
   float: left;
   width: 33.33333333333333%;
   padding: 0 20px;
-  *width: 28.56234096692112%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 header#worlds_birth > div#logo > figure {
   float: left;
@@ -943,8 +945,9 @@ header#worlds_birth > div#logo > a {
   float: left;
   width: 75%;
   padding: 0 20px;
-  *width: 70.2290076335878%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
   font-family: "Open Sans Condensed", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
   line-height: 2em;
   font-size: 36px;
@@ -964,8 +967,9 @@ header#worlds_birth > div#logo > p {
   float: left;
   width: 100%;
   padding: 0 0;
-  *width: 95.2290076335878%;
-  *padding: 0 -0.047709923664122134px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
   font-size: 12px;
 }
 header#worlds_birth > nav {
@@ -977,8 +981,9 @@ header#worlds_birth > nav {
   float: left;
   width: 66.66666666666666%;
   padding: 0 20px;
-  *width: 61.89567430025444%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
   font-weight: bold;
   line-height: 4.5em;
 }
@@ -1018,8 +1023,9 @@ header#worlds_birth > div#blurb {
   float: left;
   width: 100%;
   padding: 0 20px;
-  *width: 95.2290076335878%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
   text-align: center;
   padding-top: 3em;
   padding-bottom: 3em;
@@ -1036,8 +1042,9 @@ header#worlds_birth > div#cta {
   float: left;
   width: 100%;
   padding: 0 20px;
-  *width: 95.2290076335878%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
   padding-left: 25%;
   padding-right: 25%;
 }
@@ -1050,8 +1057,9 @@ header#worlds_birth > div#cta > div {
   float: left;
   width: 50%;
   padding: 0 20px;
-  *width: 45.229007633587784%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
   line-height: 3em;
   margin-bottom: -1.6em;
 }
@@ -1081,8 +1089,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 100%;
   padding: 0 20px;
-  *width: 95.2290076335878%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
   margin-bottom: 1.5em;
 }
 #content > section#features > div {
@@ -1094,8 +1103,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 33.33333333333333%;
   padding: 0 20px;
-  *width: 28.56234096692112%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
   margin-bottom: 1.5em;
 }
 #content > section#features > div > span {
@@ -1107,8 +1117,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 25%;
   padding: 0 20px;
-  *width: 20.229007633587788%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
   font-size: 50px;
   color: #dddddd;
   -webkit-transition: all .2s linear;
@@ -1125,8 +1136,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 75%;
   padding: 0 20px;
-  *width: 70.2290076335878%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content > section#features > div:hover > span,
 #content > section#features > div:focus > span {
@@ -1141,10 +1153,39 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 100%;
   padding: 0 20px;
-  *width: 95.2290076335878%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
   padding-left: 16.666666666666664%;
   padding-right: 16.666666666666664%;
+}
+#content > section#typography {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url(/assets/js/libs/boxsizing.htc);
+  display: inline;
+  float: left;
+  width: 66.66666666666666%;
+  padding: 0 20px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
+  background: url(../images/baseline.png);
+}
+#content > aside#typography_sidebar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url(/assets/js/libs/boxsizing.htc);
+  display: inline;
+  float: left;
+  width: 33.33333333333333%;
+  padding: 0 20px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
+  background: url(../images/baseline.png);
 }
 #content section#one,
 #content section#two,
@@ -1207,8 +1248,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 8.333333333333332%;
   padding: 0 20px;
-  *width: 3.5623409669211195%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#one > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1219,8 +1261,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 91.66666666666666%;
   padding: 0 20px;
-  *width: 86.89567430025444%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#two > div:first-child {
   -webkit-box-sizing: border-box;
@@ -1231,8 +1274,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 16.666666666666664%;
   padding: 0 20px;
-  *width: 11.895674300254452%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#two > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1243,8 +1287,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 83.33333333333334%;
   padding: 0 20px;
-  *width: 78.56234096692111%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#three > div:first-child {
   -webkit-box-sizing: border-box;
@@ -1255,8 +1300,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 25%;
   padding: 0 20px;
-  *width: 20.229007633587788%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#three > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1267,8 +1313,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 75%;
   padding: 0 20px;
-  *width: 70.2290076335878%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#four > div:first-child {
   -webkit-box-sizing: border-box;
@@ -1279,8 +1326,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 33.33333333333333%;
   padding: 0 20px;
-  *width: 28.56234096692112%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#four > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1291,8 +1339,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 66.66666666666666%;
   padding: 0 20px;
-  *width: 61.89567430025444%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#five > div:first-child {
   -webkit-box-sizing: border-box;
@@ -1303,8 +1352,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 41.66666666666667%;
   padding: 0 20px;
-  *width: 36.895674300254456%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#five > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1315,8 +1365,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 58.333333333333336%;
   padding: 0 20px;
-  *width: 53.56234096692112%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#six > div:first-child {
   -webkit-box-sizing: border-box;
@@ -1327,8 +1378,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 50%;
   padding: 0 20px;
-  *width: 45.229007633587784%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#six > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1339,8 +1391,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 50%;
   padding: 0 20px;
-  *width: 45.229007633587784%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#seven > div:first-child {
   -webkit-box-sizing: border-box;
@@ -1351,8 +1404,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 58.333333333333336%;
   padding: 0 20px;
-  *width: 53.56234096692112%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#seven > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1363,8 +1417,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 41.66666666666667%;
   padding: 0 20px;
-  *width: 36.895674300254456%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#eight > div:first-child {
   -webkit-box-sizing: border-box;
@@ -1375,8 +1430,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 66.66666666666666%;
   padding: 0 20px;
-  *width: 61.89567430025444%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#eight > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1387,8 +1443,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 33.33333333333333%;
   padding: 0 20px;
-  *width: 28.56234096692112%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#nine > div:first-child {
   -webkit-box-sizing: border-box;
@@ -1399,8 +1456,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 75%;
   padding: 0 20px;
-  *width: 70.2290076335878%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#nine > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1411,8 +1469,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 25%;
   padding: 0 20px;
-  *width: 20.229007633587788%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#ten > div:first-child {
   -webkit-box-sizing: border-box;
@@ -1423,8 +1482,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 83.33333333333334%;
   padding: 0 20px;
-  *width: 78.56234096692111%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#ten > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1435,8 +1495,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 16.666666666666664%;
   padding: 0 20px;
-  *width: 11.895674300254452%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#eleven div {
   margin-bottom: 0;
@@ -1450,8 +1511,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 91.66666666666666%;
   padding: 0 20px;
-  *width: 86.89567430025444%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#eleven > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1462,8 +1524,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 8.333333333333332%;
   padding: 0 20px;
-  *width: 3.5623409669211195%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#thirds > div {
   -webkit-box-sizing: border-box;
@@ -1474,8 +1537,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 33.33333333333333%;
   padding: 0 20px;
-  *width: 28.56234096692112%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#quarters > div {
   -webkit-box-sizing: border-box;
@@ -1486,8 +1550,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 25%;
   padding: 0 20px;
-  *width: 20.229007633587788%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#sixths > div {
   -webkit-box-sizing: border-box;
@@ -1498,8 +1563,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 16.666666666666664%;
   padding: 0 20px;
-  *width: 11.895674300254452%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 #content section#twelfths > div {
   -webkit-box-sizing: border-box;
@@ -1510,8 +1576,9 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 8.333333333333332%;
   padding: 0 20px;
-  *width: 3.5623409669211195%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 footer#worlds_end {
   *zoom: 1;
@@ -1536,8 +1603,9 @@ footer#worlds_end div#license {
   float: left;
   width: 58.333333333333336%;
   padding: 0 20px;
-  *width: 53.56234096692112%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
 }
 footer#worlds_end div#contact {
   -webkit-box-sizing: border-box;
@@ -1548,13 +1616,42 @@ footer#worlds_end div#contact {
   float: left;
   width: 41.66666666666667%;
   padding: 0 20px;
-  *width: 36.895674300254456%;
-  *padding: 0 19.952290076335878px;
+  /**width: 100%*((@x / @gridsystem_width)-@correction);
+	*padding: 0 (@padding)-@correction;*/
+
   text-align: right;
 }
 @media screen and (max-width: 750px) {
+  #content > section#page {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
   
+    padding-left: 8.333333333333332%;
+    padding-right: 8.333333333333332%;
+  }
 }
 @media screen and (max-width: 520px) {
+  #content > section#page {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
   
+    padding-left: 0%;
+    padding-right: 0%;
+  }
 }
