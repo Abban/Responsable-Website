@@ -57,11 +57,11 @@
 					
 					<li><a href="<?php echo site_url(); ?>">Home</a></li>
 
-					<li><a href="<?php echo site_url('usage'); ?>">Usage</a></li>
+					<li><a href="<?php echo site_url('usage'); ?>/">Usage</a></li>
 					
-					<li><a href="<?php echo site_url('typography'); ?>">Typography</a></li>
+					<li><a href="<?php echo site_url('typography'); ?>/">Typography</a></li>
 					
-					<li><a href="<?php echo site_url('grid'); ?>">Grid</a></li>
+					<li><a href="<?php echo site_url('grid'); ?>/">Grid</a></li>
 					
 					<li class="download"><a href="#">Download</a></li>
 				
