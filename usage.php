@@ -14,7 +14,7 @@
 
 			<h3>SCSS</h3>
 
-			<p>THe same grid is also provided in SCSS. <!-- Brief bit by jimmy on SCSS --></p>
+			<p>The core files are also provided in <a href="http://sass-lang.com/">SCSS</a> for those that prefer it to Less. Compiling works the same as w/ Less, though you also have the option of compiling locally from the command line or server-side for anyone brave enough. Again, Codekit is your best friend for compiling locally with css browser injection.</p>
 
 			<h3>Polyfill</h3>
 
