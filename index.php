@@ -38,7 +38,7 @@
 
 			</div>
 
-			<div>
+			<div class="break_two">
 
 				<span class="icon-picture"></span>
 				
@@ -52,7 +52,7 @@
 
 			</div>
 
-			<div>
+			<div class="break_three">
 
 				<span class="icon-th"></span>
 				
@@ -66,7 +66,7 @@
 
 			</div>
 
-			<div>
+			<div class="break_two">
 
 				<span class="icon-th-list"></span>
 				

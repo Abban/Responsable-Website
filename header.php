@@ -47,7 +47,7 @@
 
 				<a href="<?php echo site_url(); ?>">Responsable.</a>
 
-				<p>A responsive html/css framework.</p>
+				<p>A responsive html/css/less/scss framework.</p>
 			
 			</div>
 

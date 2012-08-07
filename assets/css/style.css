@@ -785,6 +785,9 @@ pre {
   margin-bottom: 1.5em;
   font-weight: bold;
 }
+#page figure {
+  margin-bottom: 1.5em;
+}
 .button {
   background: #6bac60;
   font-size: 20px;
@@ -918,17 +921,9 @@ header#worlds_birth:after {
   clear: both;
 }
 header#worlds_birth > div#logo {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  *behavior: url(/assets/js/libs/boxsizing.htc);
-  display: inline;
+  width: 336px;
   float: left;
-  width: 33.33333333333333%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
 }
 header#worlds_birth > div#logo > figure {
   float: left;
@@ -949,8 +944,8 @@ header#worlds_birth > div#logo > a {
 	*padding: 0 (@padding)-@correction;*/
 
   font-family: "Open Sans Condensed", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
-  line-height: 2em;
-  font-size: 36px;
+  line-height: 1.8em;
+  font-size: 40px;
   font-weight: bold;
   color: #333333;
 }
@@ -970,20 +965,11 @@ header#worlds_birth > div#logo > p {
   /**width: 100%*((@x / @gridsystem_width)-@correction);
 	*padding: 0 (@padding)-@correction;*/
 
-  font-size: 12px;
+  font-size: 14px;
 }
 header#worlds_birth > nav {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  *behavior: url(/assets/js/libs/boxsizing.htc);
-  display: inline;
-  float: left;
-  width: 66.66666666666666%;
+  float: right;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
   font-weight: bold;
   line-height: 4.5em;
 }
@@ -1143,6 +1129,9 @@ header#worlds_birth > div#cta > div > a {
 #content > section#features > div:hover > span,
 #content > section#features > div:focus > span {
   color: #6bac60;
+}
+#content > section#features > div.break_three {
+  clear: both;
 }
 #content > section#page {
   -webkit-box-sizing: border-box;
@@ -1621,7 +1610,73 @@ footer#worlds_end div#contact {
 
   text-align: right;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
+  footer#worlds_end div#license {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
+  
+  }
+  footer#worlds_end div#contact {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
+  
+    text-align: left;
+  }
+}
+@media screen and (max-width: 880px) {
+  header#worlds_birth > div#logo {
+    margin: 0 auto;
+    float: none;
+  }
+  header#worlds_birth > nav {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
+  
+    line-height: 1.5em;
+  }
+  header#worlds_birth > nav ul {
+    float: none;
+    text-align: center;
+  }
+  header#worlds_birth > div#cta {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
+  
+    padding-left: 8.333333333333332%;
+    padding-right: 8.333333333333332%;
+  }
   #content > section#page {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1637,8 +1692,177 @@ footer#worlds_end div#contact {
     padding-left: 8.333333333333332%;
     padding-right: 8.333333333333332%;
   }
+  #content > section#features > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
+  
+  }
+  #content > section#features > div.break_two {
+    clear: both;
+  }
+  #content > section#features > div.break_three {
+    clear: none;
+  }
+  #content > section#typography {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
+  
+  }
+  #content > aside#typography_sidebar {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 0;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
+  
+  }
+  #content > aside#typography_sidebar > h2 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
+  
+    padding-top: 0.25em;
+    margin-bottom: 0.5em;
+  }
+  #content > aside#typography_sidebar div#lists > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 33.33333333333333%;
+    padding: 0 20px;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
+  
+  }
+  #content > aside#typography_sidebar div#lists ul,
+  #content > aside#typography_sidebar div#lists ol {
+    padding-left: 10%;
+  }
+  #content > aside#typography_sidebar > div:last-child {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 0;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
+  
+  }
+  #content > aside#typography_sidebar > div:last-child > h2 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
+  
+    padding-top: 0.25em;
+    margin-bottom: 0.5em;
+  }
+  #content > aside#typography_sidebar > div:last-child > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
+  
+  }
+}
+@media screen and (max-width: 620px) {
+  header#worlds_birth > nav ul li {
+    padding-left: 10px;
+  }
+  header#worlds_birth > nav ul li.download a {
+    display: block;
+    margin: 1.5em 0 0;
+    padding: .75em 0;
+  }
+  header#worlds_birth > div#blurb {
+    padding-top: 1.5em;
+    padding-bottom: 1,5em;
+  }
+  header#worlds_birth > div#blurb h1 {
+    font-size: 28px;
+  }
+  header#worlds_birth > div#cta {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
+  
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  header#worlds_birth > div#cta > div > a span {
+    display: none;
+  }
+  #content > section#features > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
+  
+  }
 }
 @media screen and (max-width: 520px) {
+  header#worlds_birth > div#cta > div > a {
+    font-size: 16px;
+  }
   #content > section#page {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1653,5 +1877,65 @@ footer#worlds_end div#contact {
   
     padding-left: 0%;
     padding-right: 0%;
+  }
+  #content > section#features > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
+  
+  }
+  #content > aside#typography_sidebar div#lists > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
+  
+  }
+  #content > aside#typography_sidebar > div:last-child > h2 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
+  
+    padding-top: 0.25em;
+    margin-bottom: 0.5em;
+  }
+  #content > aside#typography_sidebar > div:last-child > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    *behavior: url(/assets/js/libs/boxsizing.htc);
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 20px;
+    /**width: 100%*((@x / @gridsystem_width)-@correction);
+  	*padding: 0 (@padding)-@correction;*/
+  
+  }
+  #content > aside#typography_sidebar > div:last-child p {
+    margin-bottom: 0;
+  }
+  #content > aside#typography_sidebar > div:last-child div:last-child p {
+    margin-bottom: 1.5em;
   }
 }
