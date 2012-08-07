@@ -11,7 +11,7 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Responsable Grid System</title>
+	<title>A Responsive HTML CSS LESS SCSS Framework | Responsable Framework</title>
 
 	<meta name="description" content="">
 
