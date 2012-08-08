@@ -777,8 +777,9 @@ caption {
 /* Pull adds right padding */
 pre {
   background: #e1f0de;
-  font-size: small;
-  padding: 1.5em;
+  font-size: 75%;
+  line-height: 24px;
+  padding: 24px;
   margin-bottom: 1.5em;
   font-weight: bold;
 }
@@ -937,9 +938,7 @@ header#worlds_birth > div#logo > a {
   float: left;
   width: 75%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 74.95229007633588%;
   font-family: "PT Sans Narrow", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
   line-height: 1.8em;
   font-size: 40px;
@@ -959,9 +958,7 @@ header#worlds_birth > div#logo > p {
   float: left;
   width: 100%;
   padding: 0 0;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 99.95229007633588%;
   font-size: 14px;
 }
 header#worlds_birth > nav {
@@ -1006,9 +1003,7 @@ header#worlds_birth > div#blurb {
   float: left;
   width: 100%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 99.95229007633588%;
   text-align: center;
   padding-top: 3em;
   padding-bottom: 3em;
@@ -1025,9 +1020,7 @@ header#worlds_birth > div#cta {
   float: left;
   width: 100%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 99.95229007633588%;
   padding-left: 25%;
   padding-right: 25%;
 }
@@ -1040,9 +1033,7 @@ header#worlds_birth > div#cta > div {
   float: left;
   width: 50%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 49.95229007633588%;
   line-height: 3em;
   margin-bottom: -1.6em;
 }
@@ -1072,9 +1063,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 100%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 99.95229007633588%;
   margin-bottom: 1.5em;
 }
 #content > section#features > div {
@@ -1086,9 +1075,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 33.33333333333333%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 33.285623409669206%;
   margin-bottom: 1.5em;
 }
 #content > section#features > div > span {
@@ -1100,9 +1087,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 25%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 24.952290076335878%;
   font-size: 50px;
   color: #dddddd;
   -webkit-transition: all .2s linear;
@@ -1119,9 +1104,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 75%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 74.95229007633588%;
 }
 #content > section#features > div:hover > span,
 #content > section#features > div:focus > span {
@@ -1139,9 +1122,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 100%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 99.95229007633588%;
   padding-left: 16.666666666666664%;
   padding-right: 16.666666666666664%;
 }
@@ -1154,9 +1135,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 66.66666666666666%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 66.61895674300254%;
   background: url(../images/baseline.png);
   *width: 660px;
 }
@@ -1169,9 +1148,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 33.33333333333333%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 33.285623409669206%;
   background: url(../images/baseline.png);
   *width: 330px;
 }
@@ -1191,6 +1168,57 @@ header#worlds_birth > div#cta > div > a {
 #content section#sixths,
 #content section#twelfths {
   background: #ccc;
+  *zoom: 1;
+}
+#content section#one:before,
+#content section#two:before,
+#content section#three:before,
+#content section#four:before,
+#content section#five:before,
+#content section#six:before,
+#content section#seven:before,
+#content section#eight:before,
+#content section#nine:before,
+#content section#ten:before,
+#content section#eleven:before,
+#content section#thirds:before,
+#content section#quarters:before,
+#content section#sixths:before,
+#content section#twelfths:before,
+#content section#one:after,
+#content section#two:after,
+#content section#three:after,
+#content section#four:after,
+#content section#five:after,
+#content section#six:after,
+#content section#seven:after,
+#content section#eight:after,
+#content section#nine:after,
+#content section#ten:after,
+#content section#eleven:after,
+#content section#thirds:after,
+#content section#quarters:after,
+#content section#sixths:after,
+#content section#twelfths:after {
+  content: "";
+  display: table;
+}
+#content section#one:after,
+#content section#two:after,
+#content section#three:after,
+#content section#four:after,
+#content section#five:after,
+#content section#six:after,
+#content section#seven:after,
+#content section#eight:after,
+#content section#nine:after,
+#content section#ten:after,
+#content section#eleven:after,
+#content section#thirds:after,
+#content section#quarters:after,
+#content section#sixths:after,
+#content section#twelfths:after {
+  clear: both;
 }
 #content section#one div,
 #content section#two div,
@@ -1210,7 +1238,6 @@ header#worlds_birth > div#cta > div > a {
   background: #6bac60;
   height: 3em;
   margin-bottom: 1.5em;
-  border: 20px solid #dddddd;
   border-top: 0;
   border-bottom: 0;
 }
@@ -1236,9 +1263,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 8.333333333333332%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 8.28562340966921%;
 }
 #content section#one > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1249,9 +1274,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 91.66666666666666%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 91.61895674300254%;
 }
 #content section#two > div:first-child {
   -webkit-box-sizing: border-box;
@@ -1262,9 +1285,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 16.666666666666664%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 16.618956743002542%;
 }
 #content section#two > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1275,9 +1296,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 83.33333333333334%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 83.28562340966923%;
 }
 #content section#three > div:first-child {
   -webkit-box-sizing: border-box;
@@ -1288,9 +1307,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 25%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 24.952290076335878%;
 }
 #content section#three > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1301,9 +1318,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 75%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 74.95229007633588%;
 }
 #content section#four > div:first-child {
   -webkit-box-sizing: border-box;
@@ -1314,9 +1329,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 33.33333333333333%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 33.285623409669206%;
 }
 #content section#four > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1327,9 +1340,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 66.66666666666666%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 66.61895674300254%;
 }
 #content section#five > div:first-child {
   -webkit-box-sizing: border-box;
@@ -1340,9 +1351,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 41.66666666666667%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 41.61895674300255%;
 }
 #content section#five > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1353,9 +1362,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 58.333333333333336%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 58.28562340966921%;
 }
 #content section#six > div:first-child {
   -webkit-box-sizing: border-box;
@@ -1366,9 +1373,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 50%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 49.95229007633588%;
 }
 #content section#six > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1379,9 +1384,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 50%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 49.95229007633588%;
 }
 #content section#seven > div:first-child {
   -webkit-box-sizing: border-box;
@@ -1392,9 +1395,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 58.333333333333336%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 58.28562340966921%;
 }
 #content section#seven > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1405,9 +1406,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 41.66666666666667%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 41.61895674300255%;
 }
 #content section#eight > div:first-child {
   -webkit-box-sizing: border-box;
@@ -1418,9 +1417,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 66.66666666666666%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 66.61895674300254%;
 }
 #content section#eight > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1431,9 +1428,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 33.33333333333333%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 33.285623409669206%;
 }
 #content section#nine > div:first-child {
   -webkit-box-sizing: border-box;
@@ -1444,9 +1439,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 75%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 74.95229007633588%;
 }
 #content section#nine > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1457,9 +1450,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 25%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 24.952290076335878%;
 }
 #content section#ten > div:first-child {
   -webkit-box-sizing: border-box;
@@ -1470,9 +1461,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 83.33333333333334%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 83.28562340966923%;
 }
 #content section#ten > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1483,9 +1472,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 16.666666666666664%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 16.618956743002542%;
 }
 #content section#eleven div {
   margin-bottom: 0;
@@ -1499,9 +1486,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 91.66666666666666%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 91.61895674300254%;
 }
 #content section#eleven > div:last-child {
   -webkit-box-sizing: border-box;
@@ -1512,9 +1497,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 8.333333333333332%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 8.28562340966921%;
 }
 #content section#thirds > div {
   -webkit-box-sizing: border-box;
@@ -1525,9 +1508,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 33.33333333333333%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 33.285623409669206%;
 }
 #content section#quarters > div {
   -webkit-box-sizing: border-box;
@@ -1538,9 +1519,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 25%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 24.952290076335878%;
 }
 #content section#sixths > div {
   -webkit-box-sizing: border-box;
@@ -1551,9 +1530,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 16.666666666666664%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 16.618956743002542%;
 }
 #content section#twelfths > div {
   -webkit-box-sizing: border-box;
@@ -1564,9 +1541,7 @@ header#worlds_birth > div#cta > div > a {
   float: left;
   width: 8.333333333333332%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 8.28562340966921%;
 }
 footer#worlds_end {
   *zoom: 1;
@@ -1591,9 +1566,7 @@ footer#worlds_end div#license {
   float: left;
   width: 58.333333333333336%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 58.28562340966921%;
 }
 footer#worlds_end div#contact {
   -webkit-box-sizing: border-box;
@@ -1604,9 +1577,7 @@ footer#worlds_end div#contact {
   float: left;
   width: 41.66666666666667%;
   padding: 0 20px;
-  /**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
-
+  *width: 41.61895674300255%;
   text-align: right;
 }
 @media screen and (max-width: 1000px) {
@@ -1626,9 +1597,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 100%;
     padding: 0 20px;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 99.95229007633588%;
   }
   footer#worlds_end div#contact {
     -webkit-box-sizing: border-box;
@@ -1639,9 +1608,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 100%;
     padding: 0 20px;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 99.95229007633588%;
     text-align: left;
   }
 }
@@ -1659,9 +1626,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 100%;
     padding: 0 20px;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 99.95229007633588%;
     line-height: 1.5em;
   }
   header#worlds_birth > nav ul {
@@ -1677,9 +1642,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 100%;
     padding: 0 20px;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 99.95229007633588%;
     padding-left: 8.333333333333332%;
     padding-right: 8.333333333333332%;
   }
@@ -1692,9 +1655,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 100%;
     padding: 0 20px;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 99.95229007633588%;
     padding-left: 8.333333333333332%;
     padding-right: 8.333333333333332%;
   }
@@ -1707,9 +1668,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 50%;
     padding: 0 20px;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 49.95229007633588%;
   }
   #content > section#features > div.break_two {
     clear: both;
@@ -1726,9 +1685,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 100%;
     padding: 0 20px;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 99.95229007633588%;
   }
   #content > aside#typography_sidebar {
     -webkit-box-sizing: border-box;
@@ -1739,9 +1696,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 100%;
     padding: 0 0;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 99.95229007633588%;
   }
   #content > aside#typography_sidebar > h2 {
     -webkit-box-sizing: border-box;
@@ -1752,9 +1707,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 100%;
     padding: 0 20px;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 99.95229007633588%;
     padding-top: 0.25em;
     margin-bottom: 0.5em;
   }
@@ -1767,9 +1720,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 33.33333333333333%;
     padding: 0 20px;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 33.285623409669206%;
   }
   #content > aside#typography_sidebar div#lists ul,
   #content > aside#typography_sidebar div#lists ol {
@@ -1784,9 +1735,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 100%;
     padding: 0 0;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 99.95229007633588%;
   }
   #content > aside#typography_sidebar > div:last-child > h2 {
     -webkit-box-sizing: border-box;
@@ -1797,9 +1746,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 100%;
     padding: 0 20px;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 99.95229007633588%;
     padding-top: 0.25em;
     margin-bottom: 0.5em;
   }
@@ -1812,9 +1759,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 50%;
     padding: 0 20px;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 49.95229007633588%;
   }
 }
 @media screen and (max-width: 620px) {
@@ -1842,9 +1787,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 100%;
     padding: 0 20px;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 99.95229007633588%;
     padding-left: 0%;
     padding-right: 0%;
   }
@@ -1860,9 +1803,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 100%;
     padding: 0 20px;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 99.95229007633588%;
   }
 }
 @media screen and (max-width: 520px) {
@@ -1878,9 +1819,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 100%;
     padding: 0 20px;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 99.95229007633588%;
     padding-left: 0%;
     padding-right: 0%;
   }
@@ -1893,9 +1832,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 100%;
     padding: 0 20px;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 99.95229007633588%;
   }
   #content > aside#typography_sidebar div#lists > div {
     -webkit-box-sizing: border-box;
@@ -1906,9 +1843,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 100%;
     padding: 0 20px;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 99.95229007633588%;
   }
   #content > aside#typography_sidebar > div:last-child > h2 {
     -webkit-box-sizing: border-box;
@@ -1919,9 +1854,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 100%;
     padding: 0 20px;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 99.95229007633588%;
     padding-top: 0.25em;
     margin-bottom: 0.5em;
   }
@@ -1934,9 +1867,7 @@ footer#worlds_end div#contact {
     float: left;
     width: 100%;
     padding: 0 20px;
-    /**width: 100%*((@x / @gridsystem_width)-@correction);
-  	*padding: 0 (@padding)-@correction;*/
-  
+    *width: 99.95229007633588%;
   }
   #content > aside#typography_sidebar > div:last-child p {
     margin-bottom: 0;

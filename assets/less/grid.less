@@ -10,7 +10,10 @@
 
 /* Utility variable — you should never need to modify this */
 @gridsystem_width: @columns * 1px;
-@correction: 0.5 / @max_width * 100 * 1%; // NOTE: CHeck this in IE
+//@correction: 0.5 / @max_width * 100 * 1%; // NOTE: CHeck this in IE
+
+@min-width: 1048;
+@correction: 0.5 / @min-width * 100 * 1%;
 
 /* The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack */
 .grid-clearfix(){
@@ -30,7 +33,8 @@
 .border-box(){
 	-webkit-box-sizing: border-box; 
 	-moz-box-sizing: border-box; 
-	box-sizing: border-box; *behavior: url(/assets/js/libs/boxsizing.htc);
+	box-sizing: border-box;
+	*behavior: url(/assets/js/libs/boxsizing.htc);
 }
 
 /* Our row container */
@@ -54,8 +58,7 @@
 	padding: 0 @padding;
 
 	//IE 6 & 7 Fix
-	/**width: 100%*((@x / @gridsystem_width)-@correction);
-	*padding: 0 (@padding)-@correction;*/
+	*width: (100%*(@x / @gridsystem_width))-@correction;
 }
 
 /* Push adds left padding */
