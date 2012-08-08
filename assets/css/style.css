@@ -41,7 +41,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url(/assets/js/libs/boxsizing.htc);
+  *behavior: url('http://responsablecss.com/assets/js/libs/boxsizing.htc');
 }
 article,
 aside,
@@ -1158,6 +1158,7 @@ header#worlds_birth > div#cta > div > a {
 	*padding: 0 (@padding)-@correction;*/
 
   background: url(../images/baseline.png);
+  *width: 660px;
 }
 #content > aside#typography_sidebar {
   -webkit-box-sizing: border-box;
@@ -1172,6 +1173,7 @@ header#worlds_birth > div#cta > div > a {
 	*padding: 0 (@padding)-@correction;*/
 
   background: url(../images/baseline.png);
+  *width: 330px;
 }
 #content section#one,
 #content section#two,
