@@ -193,7 +193,7 @@ h5,
 h6 {
   margin: 0;
   font-weight: bold;
-  font-family: "Open Sans Condensed", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+  font-family: "PT Sans Narrow", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
   color: #111111;
 }
 h1 {
@@ -792,7 +792,7 @@ pre {
   background: #6bac60;
   font-size: 20px;
   text-align: center;
-  font-family: "Open Sans Condensed", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+  font-family: "PT Sans Narrow", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
   color: #fff;
   font-weight: bold;
   -webkit-border-radius: 3px;
@@ -943,7 +943,7 @@ header#worlds_birth > div#logo > a {
   /**width: 100%*((@x / @gridsystem_width)-@correction);
 	*padding: 0 (@padding)-@correction;*/
 
-  font-family: "Open Sans Condensed", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+  font-family: "PT Sans Narrow", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
   line-height: 1.8em;
   font-size: 40px;
   font-weight: bold;
@@ -1610,6 +1610,13 @@ footer#worlds_end div#contact {
 
   text-align: right;
 }
+@media screen and (max-width: 1000px) {
+  #content section#one,
+  #content section#twelfths,
+  #content section#eleven {
+    display: none;
+  }
+}
 @media screen and (max-width: 950px) {
   footer#worlds_end div#license {
     -webkit-box-sizing: border-box;
@@ -1937,5 +1944,31 @@ footer#worlds_end div#contact {
   }
   #content > aside#typography_sidebar > div:last-child div:last-child p {
     margin-bottom: 1.5em;
+  }
+  #content section#two,
+  #content section#sixths,
+  #content section#ten {
+    display: none;
+  }
+}
+@media screen and (max-width: 460px) {
+  #content section#one div,
+  #content section#two div,
+  #content section#three div,
+  #content section#four div,
+  #content section#five div,
+  #content section#six div,
+  #content section#seven div,
+  #content section#eight div,
+  #content section#nine div,
+  #content section#ten div,
+  #content section#eleven div,
+  #content section#thirds div,
+  #content section#quarters div,
+  #content section#sixths div,
+  #content section#twelfths div {
+    border: 10px solid #ddd;
+    border-top: 0;
+    border-bottom: 0;
   }
 }

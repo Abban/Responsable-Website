@@ -22,7 +22,7 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo site_url('assets/images/apple-touch-icon-72x72.png'); ?>">
 	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo site_url('assets/images/apple-touch-icon-114x114.png'); ?>">
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="<?php echo site_url('assets/css/style.css'); ?>">
 

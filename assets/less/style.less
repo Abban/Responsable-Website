@@ -33,7 +33,7 @@
 @heading_color: #111;
 
 @body_family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
-@heading_family: "Open Sans Condensed", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+@heading_family: "PT Sans Narrow", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
 
 /* Link colors */
 @link: #4d7c45;
@@ -329,6 +329,14 @@ footer#worlds_end{
 	}
 }
 
+@media screen and (max-width: 1000px){
+	#content{
+		section#one, section#twelfths, section#eleven{
+			display:none;
+		}
+	}
+}
+
 @media screen and (max-width: 950px){
 	footer#worlds_end{
 		div#license{
@@ -499,7 +507,35 @@ footer#worlds_end{
 				}
 			}
 		}
+		section#two, section#sixths, section#ten{
+			display:none;
+		}
 	}
 }
 
+@media screen and (max-width: 460px){
+	#content{
+		section#one,
+		section#two,
+		section#three,
+		section#four,
+		section#five,
+		section#six,
+		section#seven,
+		section#eight,
+		section#nine,
+		section#ten,
+		section#eleven,
+		section#thirds,
+		section#quarters,
+		section#sixths,
+		section#twelfths{
+			div{
+				border: 10px solid #ddd;
+				border-top:0;
+				border-bottom:0;
+			}
+		}
+	}
+}
 
