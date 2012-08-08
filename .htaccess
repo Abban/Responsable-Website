@@ -3,6 +3,10 @@ AddType text/x-component .htc
 RewriteEngine On
 RewriteBase /
 
-RewriteRule ^usage/$ usage.php [NC,L]
-RewriteRule ^typography/$ typography.php [NC,L]
-RewriteRule ^grid/$ grid.php [NC,L]
+RewriteRule ^usage/$ usage.php [L]
+RewriteRule ^typography/$ typography.php [L]
+RewriteRule ^grid/$ grid.php [L]
+
+RewriteRule ^usage$ usage.php [L]
+RewriteRule ^typography$ typography.php [L]
+RewriteRule ^grid$ grid.php [L]

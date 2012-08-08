@@ -57,13 +57,13 @@
 					
 					<li><a href="<?php echo site_url(); ?>">Home</a></li>
 
-					<li><a href="<?php echo site_url('usage'); ?>">Usage</a></li>
+					<li><a href="<?php echo site_url('usage'); ?>/">Usage</a></li>
 					
-					<li><a href="<?php echo site_url('typography'); ?>">Typography</a></li>
+					<li><a href="<?php echo site_url('typography'); ?>/">Typography</a></li>
 					
-					<li><a href="<?php echo site_url('grid'); ?>">Grid</a></li>
+					<li><a href="<?php echo site_url('grid'); ?>/">Grid</a></li>
 					
-					<li class="download"><a href="#">Download</a></li>
+					<li class="download"><a href="https://github.com/Abban/Responsable-Grid-System/zipball/master">Download</a></li>
 				
 				</ul>
 
@@ -82,11 +82,11 @@
 				<div id="cta">
 					
 					<div>
-						<a class="button" href="#"><span class="icon-install"></span>Download</a>
+						<a class="button" href="https://github.com/Abban/Responsable-Grid-System/zipball/master"><span class="icon-install"></span>Download</a>
 					</div>
 
 					<div>
-						<a class="button alt" href="#"><span class="icon-github"></span> View on Github</a>
+						<a class="button alt" href="http://github.com/Abban/Responsable-Grid-System"><span class="icon-github"></span> View on Github</a>
 					</div>
 
 				</div>
