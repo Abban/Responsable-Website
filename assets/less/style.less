@@ -55,7 +55,8 @@
 /* = Import normalize baseline and grid                    = */
 /* ========================================================== */
 
-@import "normalize-baseline.less";
+@import "normalize.less";
+@import "baseline.less";
 @import "grid.less";
 @import "ui.less";
 @import "icons.less";
@@ -99,6 +100,7 @@ header#worlds_birth{
 			font-size: 40px;
 			font-weight:bold;
 			color:@body_color;
+			text-decoration: none;
 			&:hover, &:focus{
 				color:@link;
 			}
@@ -119,6 +121,7 @@ header#worlds_birth{
 				display:inline;
 				padding-left: 24px;
 				a{
+					text-decoration: none;
 					color:@green;
 					&:hover, &:focus{
 						color:@link;
@@ -160,6 +163,7 @@ header#worlds_birth{
 			margin-bottom: -1.6em;
 			>a{
 				display:block;
+				text-decoration: none;
 			}
 		}
 	}
@@ -235,6 +239,7 @@ header#worlds_birth{
 	section#twelfths{
 		background:#ccc;
 		.grid-clearfix();
+		.column(12, 0);
 		div{
 			background: @green;
 			height: 3em;
@@ -306,6 +311,9 @@ header#worlds_birth{
 	}
 	section#thirds{
 		>div{.column(4);}
+		>div.first{background:#ddd;}
+		>div.second{background:#ccc;}
+		>div.third{background:#bbb;}
 	}
 	section#quarters{
 		>div{.column(3);}

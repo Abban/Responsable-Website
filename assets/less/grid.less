@@ -12,8 +12,7 @@
 @gridsystem_width: @columns * 1px;
 //@correction: 0.5 / @max_width * 100 * 1%; // NOTE: CHeck this in IE
 
-@min-width: 1048;
-@correction: 0.5 / @min-width * 100 * 1%;
+@correction: 0.5 / @max_width * 100 * 1%;
 
 /* The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack */
 .grid-clearfix(){
@@ -44,6 +43,7 @@
 
 	display:block;
 	max-width: @max_width;
+	*width: 960px; // Force Styling for IE7
 	margin: 0 auto;
 	padding:0 @padding;
 }

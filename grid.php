@@ -1,11 +1,21 @@
 <?php include_once('header.php'); ?>
+	
+	<!--div id="iecontainer">
+		
+		<div class="first">Box 1</div>
+		
+		<div class="second">Box 2</div>
+		
+		<div class="third">Box 3</div>
+
+	</div-->
 
 	<div id="content">
 
 		<section id="thirds">
 			<div></div>
-			<div></div>
-			<div></div>
+			<!--div></div>
+			<div></div-->
 		</section>
 
 		<section id="quarters">

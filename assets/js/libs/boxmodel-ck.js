@@ -1,0 +1,1 @@
+(function(e){e.fn.boxmodel=function(e){};e("*").boxmodel()})(jQuery);
