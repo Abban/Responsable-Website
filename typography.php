@@ -175,7 +175,7 @@
 			<p>Forms have a little bit of default styling too, all form elements are set to border-box and 100% and will extend to the boundaries of their parent containers.</p>
 
 			<form action="/" method="get">
-				
+					
 				<fieldset>
 					
 					<legend>Form Elements</legend>
@@ -249,6 +249,11 @@
 					    </li>
 
 					    <li>
+					    	<label for="form_datetime">Datetime:</label>
+					    	<input name="form_datetime" id="form_datetime" type="datetime">
+					    </li>
+
+					    <li>
 					    	<label for="form_datetime_local">Local Time:</label>
 					    	<input name="form_datetime_local" id="form_datetime_local" type="datetime-local">
 					    </li>
@@ -264,7 +269,7 @@
 
 					    <li>
 					    	<label for="form_telephone">Phone:</label>
-					    	<input name="form_telephone" id="form_telephone" type="telephone">
+					    	<input name="form_telephone" id="form_telephone" type="tel">
 					    </li>
 
 					    <li>
